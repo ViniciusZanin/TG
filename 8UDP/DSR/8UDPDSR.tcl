@@ -11,7 +11,7 @@ set val(ll)             LL                         ;# link layer type
 set val(ant)            Antenna/OmniAntenna        ;# antenna model
 set val(ifqlen)         50                         ;# max packet in ifq 
 set val(nn)             8                          ;# number of mobilenodes
-set val(rp)             WCETT                       ;# routing protocol 
+set val(rp)             DSR                       ;# routing protocol 
 set val(x)              500                  ;# X dimension of topography
 set val(y)              500                  ;# Y dimension of topography
 set val(stop)           150               ;# time of simulation end
