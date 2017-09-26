@@ -1,0 +1,17 @@
+TCP
+AODV
+Average End-to-End Delay    = 418.185 ms
+DSR
+Average End-to-End Delay    = 396.093 ms
+WCETT
+Average End-to-End Delay    = 407.759 ms
+
+UDP
+AODV
+Average End-to-End Delay    = 18.2469 ms
+DSR
+Average End-to-End Delay    = 17.8507 ms
+WCETT
+Average End-to-End Delay    = 18.22 ms
+
+

@@ -1,0 +1,16 @@
+TCP
+AODV
+Average Throughput[kbps] = 11434.98		 StartTime=24.92	StopTime=149.99
+DSR
+Average Throughput[kbps] = 16017.02		 StartTime=24.28	StopTime=150.00
+WCETT
+Average Throughput[kbps] = 12266.72		 StartTime=24.54	StopTime=150.00
+
+
+UDP
+AODV
+Average Throughput[kbps] = 1762.17		 StartTime=40.64	StopTime=149.98
+DSR
+Average Throughput[kbps] = 2173.18		 StartTime=40.15	StopTime=150.00
+WCETT
+Average Throughput[kbps] = 1740.42		 StartTime=41.08	StopTime=149.99
