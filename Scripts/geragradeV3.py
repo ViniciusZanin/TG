@@ -7,25 +7,52 @@ nnos = i
 randnos = input("Deseja que os nos sejam aleatorios? 1 Para sim e 0 para nao\n")
 ntrans = int(input("Quantos nos irao transmitir?\n"))
 tipotraf = int(input("Qual tipo de trafego? 1 para CBR ou 2 para TCP\n"))
+randtraf = int(input("Deseja que o trafego seja aleatorio? 1 para sim ou 0 para nao\n"))
 traffic = " "
 tcpWindows = "\n\n #Exibe o tamanho da janela\n"+"proc plotWindow {tcpSource file} {\n"+"global ns \n"+"set time 0.01 \n"+"set now [$ns now] \n"+"set cwnd [$tcpSource set cwnd_] \n" +'puts $file "$now $cwnd"\n'+'$ns at [expr $now+$time] "plotWindow $tcpSource $file" }\n'+'$ns at 10.1 "plotWindow $tcp $windowVsTime2"\n'
+temposimu = int(input("Qual tempo da simualacao?\n"))
+
 if tipotraf == 2:
 	while ntrans > 0:
-		norigem = int(input("Qual no de origem?\n"))
-		nodestino = int(input("Qual no de destino?\n"))
-		strans = float(input("Quando a transmissao ira comecar?\n"))
-		traffic = traffic + "\n#Define a conexao TCP entre "+str(norigem)+" e "+str(nodestino)+" Comecando em "+str(strans)+"\nset tcp [new Agent/TCP/Newreno]\n"+"$tcp set class_ 2 \n"+"set sink [new Agent/TCPSink] \n"+"$ns attach-agent $node_("+str(norigem)+")  $tcp\n" + "$ns attach-agent $node_("+str(nodestino)+") $sink\n"+"$ns connect $tcp $sink\n"+"set ftp [new Application/FTP]\n"+"$ftp attach-agent $tcp\n"+"$ns at " +str(strans)+ ' "$ftp start"'
-		ntrans -=1
+		if(randtraf == 0):
+			norigem = int(input("Qual no de origem?\n"))
+			nodestino = int(input("Qual no de destino?\n"))
+			strans = float(input("Quando a transmissao ira comecar?\n"))
+			traffic = traffic + "\n#Define a conexao TCP entre "+str(norigem)+" e "+str(nodestino)+" Comecando em "+str(strans)+"\nset tcp [new Agent/TCP/Newreno]\n"+"$tcp set class_ 2 \n"+"set sink [new Agent/TCPSink] \n"+"$ns attach-agent $node_("+str(norigem)+")  $tcp\n" + "$ns attach-agent $node_("+str(nodestino)+") $sink\n"+"$ns connect $tcp $sink\n"+"set ftp [new Application/FTP]\n"+"$ftp attach-agent $tcp\n"+"$ns at " +str(strans)+ ' "$ftp start"'
+			ntrans -=1
+		else:
+			norigem = int(random.randrange(0,nnos-1,1))
+			nodestino = int(random.randrange(0,nnos-1,1))
+			while(norigem == nodestino):
+				nodestino = int(random.randrange(0,nnos-1,1))
+			strans = float(random.randrange(0,temposimu,1))
+			traffic = traffic + "\n#Define a conexao TCP entre "+str(norigem)+" e "+str(nodestino)+" Comecando em "+str(strans)+"\nset tcp [new Agent/TCP/Newreno]\n"+"$tcp set class_ 2 \n"+"set sink [new Agent/TCPSink] \n"+"$ns attach-agent $node_("+str(norigem)+")  $tcp\n" + "$ns attach-agent $node_("+str(nodestino)+") $sink\n"+"$ns connect $tcp $sink\n"+"set ftp [new Application/FTP]\n"+"$ftp attach-agent $tcp\n"+"$ns at " +str(strans)+ ' "$ftp start"'+"\n"
+			ntrans -=1
+
+
 
 elif tipotraf == 1:
     while ntrans > 0:
-        norigem = int(input("Qual no de origem?\n"))
-        nodestino = int(input("Qual no de destino?\n"))
-        strans = float(input("Quando a transmissao ira comecar?\n"))
-        intervalo = float(input("Qual intervalo de transmissao?\n"))
-        cbr = "cbr_("+ str(ntrans)+")"
-        traffic = traffic + "\n #Define a conexao UDP entre "+str(norigem)+" e"+str(nodestino)+" Comecando em "+str(strans)+"\nset udp_("+str(ntrans)+") [new Agent/UDP]\n"+"$ns attach-agent $node_("+str(norigem)+") $udp_("+str(ntrans)+")\n"+"set null_("+str(ntrans)+") [new Agent/Null]\n"+"$ns attach-agent $node_("+str(nodestino)+") $null_("+str(ntrans)+")\n"+"set "+cbr +" [new Application/Traffic/CBR]\n"+"$"+cbr+" set packetSize_ 512\n"+"$"+cbr+" set interval_ "+str(intervalo)+"\n$"+cbr+" set random_ 1\n"+"$"+cbr+" set maxpkts_ 10000\n"+"$"+cbr+" attach-agent $udp_("+str(ntrans)+")\n"+"$ns connect $udp_("+str(ntrans)+") $null_("+str(ntrans)+")\n"+"$ns at "+str(strans)+' "$'+cbr+' start"'
-        ntrans -=1
+        if(randtraf==0):
+            norigem = int(input("Qual no de origem?\n"))
+            nodestino = int(input("Qual no de destino?\n"))
+            strans = float(input("Quando a transmissao ira comecar?\n"))
+            intervalo = float(input("Qual intervalo de transmissao?\n"))
+            cbr = "cbr_("+ str(ntrans)+")"
+            traffic = traffic + "\n #Define a conexao UDP entre "+str(norigem)+" e"+str(nodestino)+" Comecando em "+str(strans)+"\nset udp_("+str(ntrans)+") [new Agent/UDP]\n"+"$ns attach-agent $node_("+str(norigem)+") $udp_("+str(ntrans)+")\n"+"set null_("+str(ntrans)+") [new Agent/Null]\n"+"$ns attach-agent $node_("+str(nodestino)+") $null_("+str(ntrans)+")\n"+"set "+cbr +" [new Application/Traffic/CBR]\n"+"$"+cbr+" set packetSize_ 512\n"+"$"+cbr+" set interval_ "+str(intervalo)+"\n$"+cbr+" set random_ 1\n"+"$"+cbr+" set maxpkts_ 10000\n"+"$"+cbr+" attach-agent $udp_("+str(ntrans)+")\n"+"$ns connect $udp_("+str(ntrans)+") $null_("+str(ntrans)+")\n"+"$ns at "+str(strans)+' "$'+cbr+' start"'
+            ntrans -=1
+
+        else:
+            norigem = int(random.randrange(0,nnos-1,1))
+            nodestino = int(random.randrange(0,nnos-1,1))
+            while(norigem == nodestino):
+                nodestino = int(random.randrange(0,nnos-1,1))
+            strans = float(random.randrange(0,temposimu,1))
+#            intervalo = float(random.uniform(0.01,1.0)) talvez
+            intervalo = 0.05
+            cbr = "cbr_("+ str(ntrans)+")"
+            traffic = traffic + "\n #Define a conexao UDP entre "+str(norigem)+" e"+str(nodestino)+" Comecando em "+str(strans)+"\nset udp_("+str(ntrans)+") [new Agent/UDP]\n"+"$ns attach-agent $node_("+str(norigem)+") $udp_("+str(ntrans)+")\n"+"set null_("+str(ntrans)+") [new Agent/Null]\n"+"$ns attach-agent $node_("+str(nodestino)+") $null_("+str(ntrans)+")\n"+"set "+cbr +" [new Application/Traffic/CBR]\n"+"$"+cbr+" set packetSize_ 512\n"+"$"+cbr+" set interval_ "+str(intervalo)+"\n$"+cbr+" set random_ 1\n"+"$"+cbr+" set maxpkts_ 10000\n"+"$"+cbr+" attach-agent $udp_("+str(ntrans)+")\n"+"$ns connect $udp_("+str(ntrans)+") $null_("+str(ntrans)+")\n"+"$ns at "+str(strans)+' "$'+cbr+' start"'+"\n"
+            ntrans -=1
 else:
     print("Opcao invalida")
     exit()
@@ -35,7 +62,6 @@ if tipotraf == 2:
 
 tx = int(input("Qual dimensao da topografia em x?\n"))
 ty = int(input("Qual dimensao da topografia em y?\n"))
-temposimu = int(input("Qual tempo da simualacao?\n"))
 
 
 posicaono = " "
