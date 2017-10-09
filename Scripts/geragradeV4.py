@@ -82,11 +82,14 @@ while i > 0:
 move = " "
 if movimenta == 1:
     nmovs = int(input("Quanto nos irao se movimentar?\n"))
+    velocidade = float(input("Qual velocidade dos nos?\n"))
     while nmovs > 0:
         nomv = int(input("Qual no vai se movimentar?\n"))
-        v = float(input("Qual velocidade?\n"))
-        t = float(input("Em qual momento?\n"))
-        move = move + "\n$ns at "+str(t)+' "$node_('+nomv+') setdest ' + str(random.randrange(1,tx,1))+".0 " + str(random.randrange(1,ty,1)) + ".0 "+str(v)+'"'
+      #  v = float(input("Qual velocidade?\n"))
+        v = velocidade
+      #  t = float(input("Em qual momento?\n"))
+        t = float(random.randrange(0,temposimu,1))
+        move = move + "\n$ns at "+str(t)+' "$node_('+str(nomv)+') setdest ' + str(random.randrange(1,tx,1))+".0 " + str(random.randrange(1,ty,1)) + ".0 "+str(v)+'"'
         nmovs -=1
 
 
