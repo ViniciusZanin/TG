@@ -1,0 +1,12 @@
+Average Throughput[kbps] = 4870.89		 StartTime=31.27	StopTime=150.00
+Average Throughput[kbps] = 4870.89		 StartTime=31.27	StopTime=150.00
+Average Throughput[kbps] = 4241.79		 StartTime=31.02	StopTime=150.00
+Average Throughput[kbps] = 4241.79		 StartTime=31.02	StopTime=150.00
+Average Throughput[kbps] = 28436.03		 StartTime=19.09	StopTime=149.94
+Average Throughput[kbps] = 28436.03		 StartTime=19.09	StopTime=149.94
+Average Throughput[kbps] = 3877.61		 StartTime=31.70	StopTime=149.99
+Average Throughput[kbps] = 3877.61		 StartTime=31.70	StopTime=149.99
+Average Throughput[kbps] = 3608.11		 StartTime=30.80	StopTime=150.00
+Average Throughput[kbps] = 3608.11		 StartTime=30.80	StopTime=150.00
+Average Throughput[kbps] = 4167.76		 StartTime=30.99	StopTime=150.00
+Average Throughput[kbps] = 4167.76		 StartTime=30.99	StopTime=150.00

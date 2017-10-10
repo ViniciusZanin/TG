@@ -1,0 +1,30 @@
+
+
+Average End-to-End Delay    = 217.425 ms
+
+
+
+
+Average End-to-End Delay    = 16.6617 ms
+
+
+
+
+Average End-to-End Delay    = 197.103 ms
+
+
+
+
+Average End-to-End Delay    = 21.4777 ms
+
+
+
+
+Average End-to-End Delay    = 18.7631 ms
+
+
+
+
+Average End-to-End Delay    = 35.0814 ms
+
+
