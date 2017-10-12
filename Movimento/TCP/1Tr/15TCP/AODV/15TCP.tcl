@@ -4,7 +4,6 @@
 set val(chan)           Channel/WirelessChannel    ;# channel type 
 set val(prop)           Propagation/TwoRayGround   ;# radio-propagation 
 set val(netif)          Phy/WirelessPhy            ;# network interface type 
-
 set val(mac)            Mac/802_11                 ;# MAC type
 set val(ifq)            Queue/DropTail/PriQueue    ;# interface queue typei
 set val(ll)             LL                         ;# link layer type 
@@ -129,6 +128,19 @@ $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp
 $ns at 15.0 "$ftp start"
+
+
+$ns at 100.0 "$node_(4) setdest 441.0 362.0 3.0"
+$ns at 17.0 "$node_(4) setdest 335.0 462.0 3.0"
+$ns at 83.0 "$node_(4) setdest 361.0 486.0 3.0"
+$ns at 142.0 "$node_(1) setdest 418.0 456.0 3.0"
+$ns at 18.0 "$node_(1) setdest 45.0 373.0 3.0"
+$ns at 24.0 "$node_(1) setdest 122.0 438.0 3.0"
+$ns at 54.0 "$node_(5) setdest 232.0 312.0 3.0"
+$ns at 13.0 "$node_(5) setdest 132.0 412.0 3.0"
+$ns at 107.0 "$node_(5) setdest 287.0 452.0 3.0"
+
+
 
  #Exibe o tamanho da janela
 proc plotWindow {tcpSource file} {

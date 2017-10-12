@@ -11,7 +11,7 @@ set val(ll)             LL                         ;# link layer type
 set val(ant)            Antenna/OmniAntenna        ;# antenna model
 set val(ifqlen)         50                         ;# max packet in ifq 
 set val(nn)             20                          ;# number of mobilenodes
-set val(rp)             WCETT                      ;# routing protocol 
+set val(rp)             WCETT                       ;# routing protocol 
 set val(x)              500                  ;# X dimension of topography
 set val(y)              500                  ;# Y dimension of topography
 set val(stop)           150               ;# time of simulation end
@@ -149,6 +149,18 @@ $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp
 $ns at 15.0 "$ftp start"
+
+
+$ns at 100.0 "$node_(7) setdest 441.0 362.0 3.0"
+$ns at 17.0 "$node_(7) setdest 335.0 462.0 3.0"
+$ns at 83.0 "$node_(7) setdest 361.0 486.0 3.0"
+$ns at 142.0 "$node_(1) setdest 418.0 456.0 3.0"
+$ns at 18.0 "$node_(1) setdest 45.0 373.0 3.0"
+$ns at 24.0 "$node_(1) setdest 122.0 438.0 3.0"
+$ns at 54.0 "$node_(12) setdest 232.0 312.0 3.0"
+$ns at 13.0 "$node_(12) setdest 132.0 412.0 3.0"
+$ns at 107.0 "$node_(12) setdest 287.0 452.0 3.0"
+
 
  #Exibe o tamanho da janela
 proc plotWindow {tcpSource file} {

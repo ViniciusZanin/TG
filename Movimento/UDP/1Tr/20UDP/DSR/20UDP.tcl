@@ -146,12 +146,23 @@ set null_(1) [new Agent/Null]
 $ns attach-agent $node_(18) $null_(1)
 set cbr_(1) [new Application/Traffic/CBR]
 $cbr_(1) set packetSize_ 512
-$cbr_(1) set interval_ 0.05
+$cbr_(1) set interval_ 0.1
 $cbr_(1) set random_ 1
 $cbr_(1) set maxpkts_ 10000
 $cbr_(1) attach-agent $udp_(1)
 $ns connect $udp_(1) $null_(1)
 $ns at 15.0 "$cbr_(1) start"
+
+$ns at 100.0 "$node_(7) setdest 441.0 362.0 3.0"
+$ns at 17.0 "$node_(7) setdest 335.0 462.0 3.0"
+$ns at 83.0 "$node_(7) setdest 361.0 486.0 3.0"
+$ns at 142.0 "$node_(1) setdest 418.0 456.0 3.0"
+$ns at 18.0 "$node_(1) setdest 45.0 373.0 3.0"
+$ns at 24.0 "$node_(1) setdest 122.0 438.0 3.0"
+$ns at 54.0 "$node_(12) setdest 232.0 312.0 3.0"
+$ns at 13.0 "$node_(12) setdest 132.0 412.0 3.0"
+$ns at 107.0 "$node_(12) setdest 287.0 452.0 3.0"
+
 
 #Define os nos inicias no nam
 for {set i 0} {$i < $val(nn)} { incr i } {

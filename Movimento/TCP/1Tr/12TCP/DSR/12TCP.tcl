@@ -124,9 +124,9 @@ $ns at 15.0 "$ftp start"
 
 
 
-$ns at 100.0 "$node_(4) setdest 241.0 362.0 3.0"
-$ns at 17.0 "$node_(4) setdest 35.0 462.0 3.0"
-$ns at 83.0 "$node_(4) setdest 361.0 486.0 3.0"
+$ns at 100.0 "$node_(6) setdest 441.0 362.0 3.0"
+$ns at 17.0 "$node_(6) setdest 335.0 462.0 3.0"
+$ns at 83.0 "$node_(6) setdest 361.0 486.0 3.0"
 $ns at 142.0 "$node_(1) setdest 418.0 456.0 3.0"
 $ns at 18.0 "$node_(1) setdest 45.0 373.0 3.0"
 $ns at 24.0 "$node_(1) setdest 122.0 438.0 3.0"
