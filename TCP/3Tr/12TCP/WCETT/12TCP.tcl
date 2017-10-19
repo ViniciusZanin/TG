@@ -11,7 +11,7 @@ set val(ll)             LL                         ;# link layer type
 set val(ant)            Antenna/OmniAntenna        ;# antenna model
 set val(ifqlen)         50                         ;# max packet in ifq 
 set val(nn)             12                          ;# number of mobilenodes
-set val(rp)             WCETT                       ;# routing protocol 
+set val(rp)             DSR                       ;# routing protocol 
 set val(x)              500                  ;# X dimension of topography
 set val(y)              500                  ;# Y dimension of topography
 set val(stop)           150               ;# time of simulation end
@@ -118,7 +118,19 @@ set ftp [new Application/FTP]
 $ftp attach-agent $tcp
 $ns at 15.0 "$ftp start"
 
-#Define a conexao TCP entre 1 e 10 Comecando em 15.0
+#Define a conexao TCP entre 1 e 6 Comecando em 15.0
+set tcp [new Agent/TCP/Newreno]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns attach-agent $node_(2)  $tcp
+$ns attach-agent $node_(8) $sink
+$ns connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns at 15.0 "$ftp start"
+
+
+#Define a conexao TCP entre 0 e 7 Comecando em 15.0
 set tcp [new Agent/TCP/Newreno]
 $tcp set class_ 2
 set sink [new Agent/TCPSink]
@@ -129,17 +141,6 @@ set ftp [new Application/FTP]
 $ftp attach-agent $tcp
 $ns at 15.0 "$ftp start"
 
-
-#Define a conexao TCP entre 5 e 6 Comecando em 15.0
-set tcp [new Agent/TCP/Newreno]
-$tcp set class_ 2
-set sink [new Agent/TCPSink]
-$ns attach-agent $node_(5)  $tcp
-$ns attach-agent $node_(6) $sink
-$ns connect $tcp $sink
-set ftp [new Application/FTP]
-$ftp attach-agent $tcp
-$ns at 15.0 "$ftp start"
 
 
 
