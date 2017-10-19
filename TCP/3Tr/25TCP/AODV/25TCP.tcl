@@ -1,5 +1,5 @@
 #Simulacaoo gerada pelo script em python feito por Vinicius Zanin
-#Simualcao com 25 nos utilizando protocolo DSR com a grade tendo 500 x 500
+#Simualcao com 18 nos utilizando protocolo DSR com a grade tendo 500 x 500
 #Define as opcoes
 set val(chan)           Channel/WirelessChannel    ;# channel type 
 set val(prop)           Propagation/TwoRayGround   ;# radio-propagation 
@@ -56,72 +56,77 @@ $topo load_flatgrid $val(x) $val(y)
 
 
 #Posicicoes iniciais dos nos
- 
-$node_(24) set X_ 500.0
-$node_(24) set Y_ 500.0
+
+$node_(24) set X_ 400.0
+$node_(24) set Y_ 200.0
 $node_(24) set Z_ 0.0
 
-$node_(23) set X_ 400.0
-$node_(23) set Y_ 500.0
+
+$node_(23) set X_ 200.0
+$node_(23) set Y_ 300.0
 $node_(23) set Z_ 0.0
 
-$node_(22) set X_ 300.0
-$node_(22) set Y_ 500.0
+
+$node_(22) set X_ 400.0
+$node_(22) set Y_ 300.0
 $node_(22) set Z_ 0.0
 
+
 $node_(21) set X_ 200.0
-$node_(21) set Y_ 500.0
+$node_(21) set Y_ 400.0
 $node_(21) set Z_ 0.0
 
-$node_(20) set X_ 100.0
-$node_(20) set Y_ 500.0
+
+$node_(20) set X_ 400.0
+$node_(20) set Y_ 400.0
 $node_(20) set Z_ 0.0
 
-$node_(19) set X_ 500.0
-$node_(19) set Y_ 400.0
+
+$node_(19) set X_ 200.0
+$node_(19) set Y_ 500.0
 $node_(19) set Z_ 0.0
 
 $node_(18) set X_ 400.0
-$node_(18) set Y_ 400.0
+$node_(18) set Y_ 500.0
 $node_(18) set Z_ 0.0
-
-$node_(17) set X_ 300.0
-$node_(17) set Y_ 400.0
+ 
+$node_(17) set X_ 500.0
+$node_(17) set Y_ 500.0
 $node_(17) set Z_ 0.0
 
-$node_(16) set X_ 200.0
-$node_(16) set Y_ 400.0
+$node_(16) set X_ 300.0
+$node_(16) set Y_ 500.0
 $node_(16) set Z_ 0.0
 
 $node_(15) set X_ 100.0
-$node_(15) set Y_ 400.0
+$node_(15) set Y_ 500.0
 $node_(15) set Z_ 0.0
 
 $node_(14) set X_ 500.0
-$node_(14) set Y_ 300.0
+$node_(14) set Y_ 400.0
 $node_(14) set Z_ 0.0
 
-$node_(13) set X_ 400.0
-$node_(13) set Y_ 300.0
+$node_(13) set X_ 300.0
+$node_(13) set Y_ 400.0
 $node_(13) set Z_ 0.0
 
-$node_(12) set X_ 300.0
-$node_(12) set Y_ 300.0
+$node_(12) set X_ 100.0
+$node_(12) set Y_ 400.0
 $node_(12) set Z_ 0.0
 
-$node_(11) set X_ 200.0
+$node_(11) set X_ 500.0
 $node_(11) set Y_ 300.0
 $node_(11) set Z_ 0.0
 
-$node_(10) set X_ 100.0
+$node_(10) set X_ 300.0
 $node_(10) set Y_ 300.0
 $node_(10) set Z_ 0.0
 
-$node_(9) set X_ 500.0
-$node_(9) set Y_ 200.0
+$node_(9) set X_ 100.0
+$node_(9) set Y_ 300.0
 $node_(9) set Z_ 0.0
 
-$node_(8) set X_ 400.0
+$node_(8) set X_ 500.0
 $node_(8) set Y_ 200.0
 $node_(8) set Z_ 0.0
 
@@ -129,72 +134,46 @@ $node_(7) set X_ 300.0
 $node_(7) set Y_ 200.0
 $node_(7) set Z_ 0.0
 
-$node_(6) set X_ 200.0
+$node_(6) set X_ 100.0
 $node_(6) set Y_ 200.0
 $node_(6) set Z_ 0.0
 
-$node_(5) set X_ 100.0
-$node_(5) set Y_ 200.0
+$node_(5) set X_ 500.0
+$node_(5) set Y_ 100.0
 $node_(5) set Z_ 0.0
 
-$node_(4) set X_ 500.0
+$node_(4) set X_ 300.0
 $node_(4) set Y_ 100.0
 $node_(4) set Z_ 0.0
 
-$node_(3) set X_ 400.0
+$node_(3) set X_ 100.0
 $node_(3) set Y_ 100.0
 $node_(3) set Z_ 0.0
 
-$node_(2) set X_ 300.0
-$node_(2) set Y_ 100.0
+$node_(2) set X_ 500.0
+$node_(2) set Y_ 0.0
 $node_(2) set Z_ 0.0
 
-$node_(1) set X_ 200.0
-$node_(1) set Y_ 100.0
+$node_(1) set X_ 300.0
+$node_(1) set Y_ 0.0
 $node_(1) set Z_ 0.0
 
 $node_(0) set X_ 100.0
-$node_(0) set Y_ 100.0
+$node_(0) set Y_ 0.0
 $node_(0) set Z_ 0.0
 
  
  
-#Define a conexao TCP entre 0 e 23 Comecando em 15.0
+#Define a conexao TCP entre 0 e 16 Comecando em 15.0
 set tcp [new Agent/TCP/Newreno]
 $tcp set class_ 2 
 set sink [new Agent/TCPSink] 
 $ns attach-agent $node_(0)  $tcp
-$ns attach-agent $node_(23) $sink
+$ns attach-agent $node_(16) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp
 $ns at 15.0 "$ftp start"
-
-
-
-#Define a conexao TCP entre 0 e 23 Comecando em 15.0
-set tcp [new Agent/TCP/Newreno]
-$tcp set class_ 2
-set sink [new Agent/TCPSink]
-$ns attach-agent $node_(1)  $tcp
-$ns attach-agent $node_(23) $sink
-$ns connect $tcp $sink
-set ftp [new Application/FTP]
-$ftp attach-agent $tcp
-$ns at 15.0 "$ftp start"
-
-#Define a conexao TCP entre 0 e 23 Comecando em 15.0
-set tcp [new Agent/TCP/Newreno]
-$tcp set class_ 2
-set sink [new Agent/TCPSink]
-$ns attach-agent $node_(3)  $tcp
-$ns attach-agent $node_(21) $sink
-$ns connect $tcp $sink
-set ftp [new Application/FTP]
-$ftp attach-agent $tcp
-$ns at 15.0 "$ftp start"
-
-
 
  #Exibe o tamanho da janela
 proc plotWindow {tcpSource file} {
