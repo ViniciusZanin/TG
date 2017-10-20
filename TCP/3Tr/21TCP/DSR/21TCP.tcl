@@ -169,13 +169,12 @@ $ns at 15.0 "$ftp start"
 
 
 
-
 #Define a conexao TCP entre 12 e 8 Comecando em 15.0
 set tcp [new Agent/TCP/Newreno]
 $tcp set class_ 2
 set sink [new Agent/TCPSink]
-$ns attach-agent $node_(9)  $tcp
-$ns attach-agent $node_(10) $sink
+$ns attach-agent $node_(15)  $tcp
+$ns attach-agent $node_(19) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp

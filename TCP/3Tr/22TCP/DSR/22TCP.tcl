@@ -149,16 +149,42 @@ $node_(0) set Z_ 0.0
 
  
  
-#Define a conexao TCP entre 0 e 16 Comecando em 15.0
+#Define a conexao TCP entre 0 e 13 Comecando em 15.0
 set tcp [new Agent/TCP/Newreno]
-$tcp set class_ 2 
-set sink [new Agent/TCPSink] 
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
 $ns attach-agent $node_(0)  $tcp
-$ns attach-agent $node_(16) $sink
+$ns attach-agent $node_(19) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp
 $ns at 15.0 "$ftp start"
+
+
+#Define a conexao TCP entre 1 e 13 Comecando em 15.0
+set tcp [new Agent/TCP/Newreno]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns attach-agent $node_(1)  $tcp
+$ns attach-agent $node_(21) $sink
+$ns connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns at 15.0 "$ftp start"
+
+
+
+#Define a conexao TCP entre 12 e 8 Comecando em 15.0
+set tcp [new Agent/TCP/Newreno]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns attach-agent $node_(11)  $tcp
+$ns attach-agent $node_(8) $sink
+$ns connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns at 15.0 "$ftp start"
+
 
  #Exibe o tamanho da janela
 proc plotWindow {tcpSource file} {
