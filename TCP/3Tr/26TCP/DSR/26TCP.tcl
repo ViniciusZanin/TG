@@ -198,8 +198,8 @@ $ns at 15.0 "$ftp start"
 set tcp [new Agent/TCP/Newreno]
 $tcp set class_ 2
 set sink [new Agent/TCPSink]
-$ns attach-agent $node_(21)  $tcp
-ns attach-agent $node_(13) $sink
+$ns attach-agent $node_(24)  $tcp
+ns attach-agent $node_(25) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp
