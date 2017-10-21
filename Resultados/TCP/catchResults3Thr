@@ -1,0 +1,14 @@
+#!/bin/bash
+# set i to 9
+i=9
+while [ $i -lt 31 ]; do
+	echo "No: $i"
+	gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/3Tr/"$i"TCP/AODV/*.tr >> AODVs3TrThr.txt
+	gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/3Tr/"$i"TCP/AODV/*.tr >> AODV3TrDelay.txt
+        gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/3Tr/"$i"TCP/DSR/*.tr >> DSR3TrThr.txt
+        gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/3Tr/"$i"TCP/DSR/*.tr >> DSR3TrDelay.txt
+        gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/3Tr/"$i"TCP/WCETT/*.tr >> WCETT3TrThr.txt
+        gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/3Tr/"$i"TCP/WCETT/*.tr >> WCETT3TrDelay.txt
+
+	let i=i+1;
+done

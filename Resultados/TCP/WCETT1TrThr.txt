@@ -40,3 +40,5 @@ Average Throughput[kbps] = -0.00		 StartTime=1000000.00	StopTime=0.00
 Average Throughput[kbps] = -0.00		 StartTime=1000000.00	StopTime=0.00
 Average Throughput[kbps] = 4559.17		 StartTime=25.16	StopTime=70.07
 Average Throughput[kbps] = 4559.17		 StartTime=25.16	StopTime=70.07
+Average Throughput[kbps] = 11129.94		 StartTime=25.14	StopTime=150.00
+Average Throughput[kbps] = 11129.94		 StartTime=25.14	StopTime=150.00
