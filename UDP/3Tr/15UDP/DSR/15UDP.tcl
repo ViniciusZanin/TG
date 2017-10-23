@@ -147,7 +147,7 @@ $ns connect $udp_(2) $null_(2)
 $ns at 15.0 "$cbr_(2) start"
  #Define a conexao UDP entre 13 e7 Comecando em 15.0
 set udp_(1) [new Agent/UDP]
-$ns attach-agent $node_(13) $udp_(1)
+$ns attach-agent $node_(14) $udp_(1)
 set null_(1) [new Agent/Null]
 $ns attach-agent $node_(7) $null_(1)
 set cbr_(1) [new Application/Traffic/CBR]
