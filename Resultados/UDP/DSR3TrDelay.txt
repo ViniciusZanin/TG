@@ -1,110 +1,110 @@
 
 
-Average End-to-End Delay    = 22.8928 ms
+AverageEnd-to-EndDelay:22,8928
 
 
 
 
-Average End-to-End Delay    = 23.1894 ms
+AverageEnd-to-EndDelay:23,1894
 
 
 
 
-Average End-to-End Delay    = 19.5582 ms
+AverageEnd-to-EndDelay:19,5582
 
 
 
 
-Average End-to-End Delay    = 16.6617 ms
+AverageEnd-to-EndDelay:16,6617
 
 
 
 
-Average End-to-End Delay    = 17.1828 ms
+AverageEnd-to-EndDelay:17,1828
 
 
 
 
-Average End-to-End Delay    = 16.7811 ms
+AverageEnd-to-EndDelay:16,7811
 
 
 
 
-Average End-to-End Delay    = 711.004 ms
+AverageEnd-to-EndDelay:711,004
 
 
 
 
-Average End-to-End Delay    = 712.833 ms
+AverageEnd-to-EndDelay:712,833
 
 
 
 
-Average End-to-End Delay    = 712.222 ms
+AverageEnd-to-EndDelay:712,222
 
 
 
 
-Average End-to-End Delay    = 13.7496 ms
+AverageEnd-to-EndDelay:13,7496
 
 
 
 
-Average End-to-End Delay    = 13.7048 ms
+AverageEnd-to-EndDelay:13,7048
 
 
 
 
-Average End-to-End Delay    = 16.6549 ms
+AverageEnd-to-EndDelay:16,6549
 
 
 
 
-Average End-to-End Delay    = 19.2274 ms
+AverageEnd-to-EndDelay:19,2274
 
 
 
 
-Average End-to-End Delay    = 16.9235 ms
+AverageEnd-to-EndDelay:16,9235
 
 
 
 
-Average End-to-End Delay    = 16.6249 ms
+AverageEnd-to-EndDelay:16,6249
 
 
 
 
-Average End-to-End Delay    = 16.6473 ms
+AverageEnd-to-EndDelay:16,6473
 
 
 
 
-Average End-to-End Delay    = 14.345 ms
+AverageEnd-to-EndDelay:14,345
 
 
 
 
-Average End-to-End Delay    = 13.9499 ms
+AverageEnd-to-EndDelay:13,9499
 
 
 
 
-Average End-to-End Delay    = 17.0135 ms
+AverageEnd-to-EndDelay:17,0135
 
 
 
 
-Average End-to-End Delay    = 13.9933 ms
+AverageEnd-to-EndDelay:13,9933
 
 
 
 
-Average End-to-End Delay    = 13.9055 ms
+AverageEnd-to-EndDelay:13,9055
 
 
 
 
-Average End-to-End Delay    = 13.9855 ms
+AverageEnd-to-EndDelay:13,9855
 
 
