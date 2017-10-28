@@ -1,110 +1,22 @@
-
-
-Average End-to-End Delay    = 262,324  
-
-
-
-
-Average End-to-End Delay    = 253,433  
-
-
-
-
-Average End-to-End Delay    = 396,653  
-
-
-
-
-Average End-to-End Delay    = 405,002  
-
-
-
-
-Average End-to-End Delay    = 403,127  
-
-
-
-
-Average End-to-End Delay    = 400,69  
-
-
-
-
-Average End-to-End Delay    = 388,78  
-
-
-
-
-Average End-to-End Delay    = 400,956  
-
-
-
-
-Average End-to-End Delay    = 339,424  
-
-
-
-
-Average End-to-End Delay    = 395,032  
-
-
-
-
-Average End-to-End Delay    = 387,484  
-
-
-
-
-Average End-to-End Delay    = 386,38  
-
-
-
-
-Average End-to-End Delay    = 389,507  
-
-
-
-
-Average End-to-End Delay    = 503,805  
-
-
-
-
-Average End-to-End Delay    = 391,958  
-
-
-
-
-Average End-to-End Delay    = 402,106  
-
-
-
-
-Average End-to-End Delay    = 392,768  
-
-
-
-
-Average End-to-End Delay    = 379,957  
-
-
-
-
-Average End-to-End Delay    = 379,024  
-
-
-
-
-Average End-to-End Delay    = 381,722  
-
-
-
-
-Average End-to-End Delay    = 423,481  
-
-
-
-
-Average End-to-End Delay    = 380,72  
-
-
+262.324
+171.303
+265.417
+271.297
+267.774
+275.078
+267.358
+266.012
+240.639
+260.189
+268.078
+264.523
+262.517
+57.7727
+259.607
+263.037
+265.245
+269.51
+267.585
+253.783
+209.225
+269.442

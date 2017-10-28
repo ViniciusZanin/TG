@@ -1,0 +1,110 @@
+
+
+Average End-to-End Delay    = 452,48  
+
+
+
+
+Average End-to-End Delay    = 481,621  
+
+
+
+
+Average End-to-End Delay    = 483,746  
+
+
+
+
+Average End-to-End Delay    = 556,005  
+
+
+
+
+Average End-to-End Delay    = 507,286  
+
+
+
+
+Average End-to-End Delay    = 551,895  
+
+
+
+
+Average End-to-End Delay    = 555,384  
+
+
+
+
+Average End-to-End Delay    = 543,658  
+
+
+
+
+Average End-to-End Delay    = 592,414  
+
+
+
+
+Average End-to-End Delay    = 910,456  
+
+
+
+
+Average End-to-End Delay    = 726,16  
+
+
+
+
+Average End-to-End Delay    = 780,91  
+
+
+
+
+Average End-to-End Delay    = 821,324  
+
+
+
+
+Average End-to-End Delay    = 935,001  
+
+
+
+
+Average End-to-End Delay    = 1128,11  
+
+
+
+
+Average End-to-End Delay    = 1001,5  
+
+
+
+
+Average End-to-End Delay    = 993,054  
+
+
+
+
+Average End-to-End Delay    = 840,222  
+
+
+
+
+Average End-to-End Delay    = 1174,26  
+
+
+
+
+Average End-to-End Delay    = 941,957  
+
+
+
+
+Average End-to-End Delay    = 1004,56  
+
+
+
+
+Average End-to-End Delay    = 874,139  
+
+

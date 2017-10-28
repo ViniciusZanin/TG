@@ -57,7 +57,7 @@
   }
    
   END {
-       printf("Average Throughput[kbps] = %.2f\t\t StartTime=%.2f\tStopTime=%.2f\n",(recvdSize/(stopTime-startTime))*(8/1000),startTime,stopTime)
+       printf("%.2f\t\t \n",(recvdSize/(stopTime-startTime))*(8/1000),startTime,stopTime)
   }
 
 
@@ -113,5 +113,5 @@ BEGIN {
   }
    
   END {
-       printf("Average Throughput[kbps] = %.2f\t\t StartTime=%.2f\tStopTime=%.2f\n",(recvdSize/(stopTime-startTime))*(8/1000),startTime,stopTime)
+       #printf("Average Throughput[kbps] = %.2f\t\t StartTime=%.2f\tStopTime=%.2f\n",(recvdSize/(stopTime-startTime))*(8/1000),startTime,stopTime)
   }

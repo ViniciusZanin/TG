@@ -14,9 +14,9 @@ BEGIN {
 
     seqno = -1;    
 
-#    droppedPackets = 0; 
+    droppedPackets = 0; 
 
-#    receivedPackets = 0; 
+    receivedPackets = 0; 
 
     count = 0;
 
@@ -29,15 +29,15 @@ BEGIN {
           seqno = $6;
 
     } 
-#	else if(($4 == "AGT") && ($1 == "r")) {
+	else if(($4 == "AGT") && ($1 == "r")) {
 
-#            receivedPackets++;
+           receivedPackets++;
 
-#    } else if ($1 == "D" && $7 == "tcp" && $8 > 512){
+    } else if ($1 == "D" && $7 == "tcp" && $8 > 512){
 
-#            droppedPackets++;            
+            droppedPackets++;            
 
-#  } 
+  } 
 
     #end-to-end delay
 
@@ -96,14 +96,13 @@ END {
 
     print "\n";
 
-#    print "GeneratedPackets            = " seqno+1;
+    print "GeneratedPackets            = " seqno+1;
 
-#    print "ReceivedPackets             = " receivedPackets;
+    print "ReceivedPackets             = " receivedPackets;
 
-#    print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100
-#"%";
+    print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100"%";
 
-#    print "Total Dropped Packets = " droppedPackets;
+    print "Total Dropped Packets = " droppedPackets;
 
     print "Average End-to-End Delay    = " n_to_n_delay * 1000 " ms";
 

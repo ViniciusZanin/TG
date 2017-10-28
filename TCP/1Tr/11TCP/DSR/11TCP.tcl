@@ -108,6 +108,7 @@ $node_(0) set Z_ 0.0
 #Define a conexao TCP entre 0 e 7 Comecando em 15.0
 set tcp [new Agent/TCP/Newreno]
 $tcp set class_ 2 
+$tcp set packetSize_ 512
 set sink [new Agent/TCPSink] 
 $ns attach-agent $node_(0)  $tcp
 $ns attach-agent $node_(7) $sink

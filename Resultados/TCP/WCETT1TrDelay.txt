@@ -1,110 +1,22 @@
-
-
-Average End-to-End Delay    = 410.893 ms
-
-
-
-
-Average End-to-End Delay    = 402.199 ms
-
-
-
-
-Average End-to-End Delay    = 468.577 ms
-
-
-
-
-Average End-to-End Delay    = 421.121 ms
-
-
-
-
-Average End-to-End Delay    = 440.564 ms
-
-
-
-
-Average End-to-End Delay    = 406.709 ms
-
-
-
-
-Average End-to-End Delay    = 447.336 ms
-
-
-
-
-Average End-to-End Delay    = 420.154 ms
-
-
-
-
-Average End-to-End Delay    = 528.494 ms
-
-
-
-
-Average End-to-End Delay    = 356.644 ms
-
-
-
-
-Average End-to-End Delay    = 496.981 ms
-
-
-
-
-Average End-to-End Delay    = 726.003 ms
-
-
-
-
-Average End-to-End Delay    = 623.541 ms
-
-
-
-
-Average End-to-End Delay    = 610.915 ms
-
-
-
-
-Average End-to-End Delay    = 619.358 ms
-
-
-
-
-Average End-to-End Delay    = 465.902 ms
-
-
-
-
-Average End-to-End Delay    = 674.441 ms
-
-
-
-
-Average End-to-End Delay    = 556.615 ms
-
-
-
-
-Average End-to-End Delay    = 679.777 ms
-
-
-
-
-Average End-to-End Delay    = 311.126 ms
-
-
-
-
-Average End-to-End Delay    = 521.713 ms
-
-
-
-
-Average End-to-End Delay    = 471.081 ms
-
-
+410.893
+402.199
+468.577
+421.121
+440.564
+406.709
+447.336
+420.154
+528.494
+356.644
+496.981
+726.003
+623.541
+610.915
+619.358
+465.902
+674.441
+556.615
+679.777
+311.126
+521.713
+471.081

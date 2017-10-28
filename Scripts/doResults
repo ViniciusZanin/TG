@@ -1,0 +1,11 @@
+#!/bin/bash
+# set i to 9
+i=9
+while [ $i -lt 31 ]; do
+	echo "No $i"
+	cd /home/vinicius/Documentos/TG/TCP/1Tr/"$i"TCP/AODV/
+	ns /home/vinicius/Documentos/TG/TCP/1Tr/"$i"TCP/AODV/*.tcl
+        cd /home/vinicius/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/
+        ns /home/vinicius/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/*.tcl
+	let i=i+1;
+done
