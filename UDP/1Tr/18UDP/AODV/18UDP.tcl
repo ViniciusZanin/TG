@@ -11,7 +11,7 @@ set val(ll)             LL                         ;# link layer type
 set val(ant)            Antenna/OmniAntenna        ;# antenna model
 set val(ifqlen)         50                         ;# max packet in ifq 
 set val(nn)             18                          ;# number of mobilenodes
-set val(rp)             AODV                        ;# routing protocol 
+set val(rp)             AODV                       ;# routing protocol 
 set val(x)              500                  ;# X dimension of topography
 set val(y)              500                  ;# Y dimension of topography
 set val(stop)           150               ;# time of simulation end
@@ -138,7 +138,7 @@ set null_(1) [new Agent/Null]
 $ns attach-agent $node_(16) $null_(1)
 set cbr_(1) [new Application/Traffic/CBR]
 $cbr_(1) set packetSize_ 512
-$cbr_(1) set interval_ 0.05
+$cbr_(1) set interval_ 0.055
 $cbr_(1) set random_ 1
 $cbr_(1) set maxpkts_ 10000
 $cbr_(1) attach-agent $udp_(1)

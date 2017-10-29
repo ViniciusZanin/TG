@@ -47,7 +47,7 @@ $topo load_flatgrid $val(x) $val(y)
              -topoInstance $topo \
              -agentTrace ON \
              -routerTrace ON \
-             -macTrace ON \
+             -macTrace OFF \
              -movementTrace ON
 
 	for {set i 0} {$i < $val(nn)} { incr i } {
@@ -56,6 +56,7 @@ $topo load_flatgrid $val(x) $val(y)
 
 
 #Posicicoes iniciais dos nos
+
  
 $node_(8) set X_ 500.0
 $node_(8) set Y_ 500.0
@@ -95,13 +96,13 @@ $node_(0) set Z_ 0.0
 
  
  
-#Define a conexao TCP entre 0 e 8 Comecando em 15.0
+#Define a conexao TCP entre 0 e 7 Comecando em 15.0
 set tcp [new Agent/TCP/Newreno]
-$tcp set class_ 2 
+$tcp set class_ 2
 $tcp set packetSize_ 512 
 set sink [new Agent/TCPSink] 
-$ns attach-agent $node_(0)  $tcp
-$ns attach-agent $node_(7) $sink
+$ns attach-agent $node_(1)  $tcp
+$ns attach-agent $node_(8) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp

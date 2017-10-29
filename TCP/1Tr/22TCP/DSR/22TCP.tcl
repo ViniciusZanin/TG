@@ -155,7 +155,7 @@ $tcp set class_ 2
 $tcp set packetSize_ 512
 set sink [new Agent/TCPSink] 
 $ns attach-agent $node_(0)  $tcp
-$ns attach-agent $node_(16) $sink
+$ns attach-agent $node_(19) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp
