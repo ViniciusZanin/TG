@@ -6,7 +6,7 @@ set val(prop)           Propagation/TwoRayGround   ;# radio-propagation
 set val(netif)          Phy/WirelessPhy            ;# network interface type 
 
 set val(mac)            Mac/802_11                 ;# MAC type
-set val(ifq)            Queue/DropTail/PriQueue    ;# interface queue typei
+set val(ifq)            CMUPriQueue    ;# interface queue typei
 set val(ll)             LL                         ;# link layer type 
 set val(ant)            Antenna/OmniAntenna        ;# antenna model
 set val(ifqlen)         50                         ;# max packet in ifq 
@@ -117,7 +117,7 @@ $tcp set class_ 2
 $tcp set packetSize_ 512
 set sink [new Agent/TCPSink] 
 $ns attach-agent $node_(0)  $tcp
-$ns attach-agent $node_(10) $sink
+$ns attach-agent $node_(11) $sink
 $ns connect $tcp $sink
 set ftp [new Application/FTP]
 $ftp attach-agent $tcp

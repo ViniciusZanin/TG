@@ -1,44 +1,22 @@
-Average Throughput[kbps] = 12862,52		 StartTime=24,32	StopTime=149,99
-Average Throughput[kbps] = 12862,52		 StartTime=24,32	StopTime=149,99
-Average Throughput[kbps] = 12862,52		 StartTime=24,32	StopTime=149,99
-Average Throughput[kbps] = 12862,52		 StartTime=24,32	StopTime=149,99
-Average Throughput[kbps] = 12858,10		 StartTime=24,32	StopTime=149,99
-Average Throughput[kbps] = 12858,10		 StartTime=24,32	StopTime=149,99
-Average Throughput[kbps] = 12868,10		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12868,10		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12868,10		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12868,10		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12849,59		 StartTime=24,22	StopTime=150,00
-Average Throughput[kbps] = 12849,59		 StartTime=24,22	StopTime=150,00
-Average Throughput[kbps] = 12874,46		 StartTime=24,28	StopTime=149,99
-Average Throughput[kbps] = 12874,46		 StartTime=24,28	StopTime=149,99
-Average Throughput[kbps] = 12873,22		 StartTime=24,33	StopTime=150,00
-Average Throughput[kbps] = 12873,22		 StartTime=24,33	StopTime=150,00
-Average Throughput[kbps] = 12853,13		 StartTime=24,33	StopTime=149,99
-Average Throughput[kbps] = 12853,13		 StartTime=24,33	StopTime=149,99
-Average Throughput[kbps] = 12837,91		 StartTime=24,29	StopTime=150,00
-Average Throughput[kbps] = 12837,91		 StartTime=24,29	StopTime=150,00
-Average Throughput[kbps] = 12859,47		 StartTime=24,31	StopTime=149,99
-Average Throughput[kbps] = 12859,47		 StartTime=24,31	StopTime=149,99
-Average Throughput[kbps] = 12861,70		 StartTime=24,37	StopTime=150,00
-Average Throughput[kbps] = 12861,70		 StartTime=24,37	StopTime=150,00
-Average Throughput[kbps] = 12861,91		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12861,91		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12861,91		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12861,91		 StartTime=24,24	StopTime=149,99
-Average Throughput[kbps] = 12856,50		 StartTime=24,31	StopTime=150,00
-Average Throughput[kbps] = 12856,50		 StartTime=24,31	StopTime=150,00
-Average Throughput[kbps] = 12868,42		 StartTime=24,36	StopTime=150,00
-Average Throughput[kbps] = 12868,42		 StartTime=24,36	StopTime=150,00
-Average Throughput[kbps] = 12866,77		 StartTime=24,37	StopTime=150,00
-Average Throughput[kbps] = 12866,77		 StartTime=24,37	StopTime=150,00
-Average Throughput[kbps] = 12866,20		 StartTime=24,31	StopTime=149,99
-Average Throughput[kbps] = 12866,20		 StartTime=24,31	StopTime=149,99
-Average Throughput[kbps] = 12862,21		 StartTime=24,34	StopTime=149,99
-Average Throughput[kbps] = 12862,21		 StartTime=24,34	StopTime=149,99
-Average Throughput[kbps] = 12651,12		 StartTime=26,34	StopTime=150,00
-Average Throughput[kbps] = 12651,12		 StartTime=26,34	StopTime=150,00
-Average Throughput[kbps] = 12856,81		 StartTime=24,34	StopTime=150,00
-Average Throughput[kbps] = 12856,81		 StartTime=24,34	StopTime=150,00
-Average Throughput[kbps] = 12855,69		 StartTime=24,33	StopTime=149,99
-Average Throughput[kbps] = 12855,69		 StartTime=24,33	StopTime=149,99
+27742.92		 
+27736.03		 
+27747.15		 
+27782.19		 
+27782.19		 
+27756.61		 
+27814.13		 
+27822.86		 
+27782.03		 
+27748.40		 
+27751.90		 
+27725.87		 
+27743.72		 
+27745.08		 
+27757.21		 
+27761.09		 
+27753.19		 
+27767.34		 
+27789.90		 
+27363.22		 
+27745.26		 
+27768.20		 

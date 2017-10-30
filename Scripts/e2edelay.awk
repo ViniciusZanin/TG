@@ -94,7 +94,7 @@ END {
 
  
 
-    print "\n";
+#    print "\n";
 
     #print "GeneratedPackets            = " seqno+1;
 
