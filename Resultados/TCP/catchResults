@@ -5,8 +5,10 @@ while [ $i -lt 31 ]; do
 	echo "No $i"
 #	gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/AODV/*.tr >> AODV1TrThr.txt
 #	gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/AODV/*.tr >> AODV1TrDelay.txt
-        gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/*.tr >> DSR1TrThr.txt
-        gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/*.tr >> DSR1TrDelay.txt
+	gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/AODV/*.tr >> AODV1TrPDR.txt
+#        gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/*.tr >> DSR1TrThr.txt
+#        gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/*.tr >> DSR1TrDelay.txt
+        gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/DSR/*.tr >> DSR1TrPDR.txt
 #       gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/WCETT/*.tr >> WCETT1TrThr.txt
 #       gawk -f ~/Documentos/TG/Scripts/e2edelay.awk ~/Documentos/TG/TCP/1Tr/"$i"TCP/WCETT/*.tr >> WCETT1TrDelay.txt
 

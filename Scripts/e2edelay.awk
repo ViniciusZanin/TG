@@ -100,11 +100,11 @@ END {
 
    # print "ReceivedPackets             = " receivedPackets;
 
-   # print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100 "%";
-
+  # print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100 "%";
+   print receivedPackets/(seqno+1)*100;
   #  print "Total Dropped Packets = " droppedPackets;
 
-    print  n_to_n_delay * 1000;
+   # print  n_to_n_delay * 1000;
 
   #  print "\n";
 
