@@ -94,15 +94,15 @@ END {
 
  
 
-   # print "\n";
+    print "\n";
 
-   # print "GeneratedPackets            = " seqno+1;
+    print "GeneratedPackets            = " seqno+1;
 
-   # print "ReceivedPackets             = " receivedPackets;
+    print "ReceivedPackets             = " receivedPackets;
 
-   # print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100 "%";
+    print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100 "%";
 
-   # print "Total Dropped Packets = " droppedPackets;
+    print "Total Dropped Packets = " droppedPackets;
 
     print  n_to_n_delay * 1000;
 
