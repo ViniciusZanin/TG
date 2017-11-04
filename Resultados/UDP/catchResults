@@ -3,12 +3,12 @@
 i=9
 while [ $i -lt 31 ]; do
 	echo "No $i"
-	gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/AODV/"$i"UDP.tr >> AODV3TrThr.txt
-	gawk -f ~/Documentos/TG/Scripts/e2edelayudp.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/AODV/"$i"UDP.tr >> AODV3TrDelay.txt
-        gawk -f ~/Documentos/TG/Scripts/droppackets.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/AODV/"$i"UDP.tr >> AODV3TrDrop.txt
-        gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/DSR/"$i"UDP.tr >> DSR3TrThr.txt
-        gawk -f ~/Documentos/TG/Scripts/e2edelayudp.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/DSR/"$i"UDP.tr >> DSR3TrDelay.txt
-        gawk -f ~/Documentos/TG/Scripts/droppackets.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/DSR/"$i"UDP.tr >> DSR3TrDrop.txt
+#	gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/AODV/"$i"UDP.tr >> AODV3TrThr.txt
+	gawk -f ~/Documentos/TG/Scripts/e2edelayudp.awk ~/Documentos/TG/UDP/1Tr/"$i"UDP/AODV/"$i"UDP.tr >> AODV1TrPDR.txt
+ #       gawk -f ~/Documentos/TG/Scripts/droppackets.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/AODV/"$i"UDP.tr >> AODV3TrDrop.txt
+ #       gawk -f ~/Documentos/TG/Scripts/Throughput2007.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/DSR/"$i"UDP.tr >> DSR3TrThr.txt
+        gawk -f ~/Documentos/TG/Scripts/e2edelayudp.awk ~/Documentos/TG/UDP/1Tr/"$i"UDP/DSR/"$i"UDP.tr >> DSR1TrPDR.txt
+#        gawk -f ~/Documentos/TG/Scripts/droppackets.awk ~/Documentos/TG/UDP/3Tr/"$i"UDP/DSR/"$i"UDP.tr >> DSR3TrDrop.txt
 
 	let i=i+1;
 done
