@@ -1,0 +1,44 @@
+2694
+Packet Delivery Ratio      = 99.9629%
+2701
+Packet Delivery Ratio      = 99.963%
+2701
+Packet Delivery Ratio      = 99.963%
+2699
+Packet Delivery Ratio      = 100%
+2698
+Packet Delivery Ratio      = 100%
+2688
+Packet Delivery Ratio      = 100%
+2683
+Packet Delivery Ratio      = 99.9627%
+2695
+Packet Delivery Ratio      = 99.9258%
+2704
+Packet Delivery Ratio      = 99.963%
+2462
+Packet Delivery Ratio      = 99.9594%
+2243
+Packet Delivery Ratio      = 99.9108%
+2704
+Packet Delivery Ratio      = 100%
+2707
+Packet Delivery Ratio      = 100%
+2705
+Packet Delivery Ratio      = 99.963%
+2704
+Packet Delivery Ratio      = 99.963%
+2701
+Packet Delivery Ratio      = 99.963%
+2717
+Packet Delivery Ratio      = 99.9264%
+2685
+Packet Delivery Ratio      = 99.8883%
+2473
+Packet Delivery Ratio      = 98.3017%
+2707
+Packet Delivery Ratio      = 99.8153%
+2657
+Packet Delivery Ratio      = 98.7204%
+2679
+Packet Delivery Ratio      = 76.7077%

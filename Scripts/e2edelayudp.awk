@@ -97,7 +97,7 @@ END {
    # print "\n";
 
     #print "GeneratedPackets            = " seqno+1;
-
+    print seqno+1;
     #print "ReceivedPackets             = " receivedPackets;
 
     print "Packet Delivery Ratio      = " receivedPackets/(seqno+1)*100"%";
